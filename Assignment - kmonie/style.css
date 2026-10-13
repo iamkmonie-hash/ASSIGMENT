@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5a801;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 85%;
+  max-width: 900px;
+  min-height: 350px;
+  background: linear-gradient(to bottom, #c4550b, #af7302);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px;
+  gap: 30px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.profile {
+  width: 250px;
+  height: 250px;
+  border: 8px solid white;
+  outline-offset: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Text details */
+
+.details {
+  color: white;
+  flex: 1;
+}
+
+.details h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.details h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.contact p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Mobile screen */
+
+@media (max-width: 650px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .profile {
+    width: 180px;
+    height: 180px;
+  }
+
+  .details h1 {
+    font-size: 30px;
+  }
+
+  .contact p {
+    font-size: 13px;
+  }
+}
+
